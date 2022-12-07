@@ -9,36 +9,36 @@ def convert_to_mark(mark_as_level):
 
     match mark_as_level:
         case "4+":
-            mark_as_level = 97
+            mark_as_grade = 97
         case "4":
-            mark_as_level = 90
+            mark_as_grade = 90
         case "4-":
-            mark_as_level = 83
+            mark_as_grade = 83
         case "3+":
-            mark_as_level = 78
+            mark_as_grade = 78
         case "3":
-            mark_as_level = 74
+            mark_as_grade = 74
         case "3-":
-            mark_as_level = 71
+            mark_as_grade = 71
         case "2+":
-            mark_as_level = 68
+            mark_as_grade = 68
         case "2":
-            mark_as_level = 64
+            mark_as_grade = 64
         case "2-":
-            mark_as_level = 61
+            mark_as_grade = 61
         case "1+":
-            mark_as_level = 58
+            mark_as_grade = 58
         case "1":
-            mark_as_level = 54
+            mark_as_grade = 54
         case "1-":
-            mark_as_level = 51
+            mark_as_grade = 51
         case "R":
-            mark_as_level = 30
+            mark_as_grade = 30
         case "NE":
-            mark_as_level = 0
+            mark_as_grade = 0
         case _:
-            mark_as_level = -1
-    return mark_as_level
+            mark_as_grade = -1
+    return mark_as_grade
 
 
 def main():
@@ -51,7 +51,7 @@ def main():
     print("")
     if mark_as_grade <= 100 and mark_as_grade >= 0:
         print("You got a mark of {0}%.".format(mark_as_grade))
-    elif mark_as_grade == -1:
+    else:
         print("Please input a valid mark.")
 
     print("\n\nDone.")
